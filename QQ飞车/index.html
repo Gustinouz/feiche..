@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+    /* #main{background: url(./images/guanwang.jpg) no-repeat center 0;}
+    #nav {background: url(./images/nav_down_re.png) repeat-x, url(./images/nav.png) no-repeat center 0; overflow: hidden; font-family: 微软雅黑；}
+    #nav .container{min-height: 236px; position: relative; overflow: hidden; }
+    #nav .nav_logo{width: 138px; height: 112px; margin-top: -15 auto;}
+
+    #nav dl{position: absolute; top:0;}
+    #nav dt{height: 63px; }
+    #nav dt a{height: 100%; width: 100%; display: block; text-indent: -9999px; overflow: hidden;}
+    #nav dd{line-height: 28px; font-size: 12px; text-align: center;}
+    #nav dd a{color: white;}
+
+    #nav .nav_index{width: 48px; height: 63px; left: 0;}
+    #nav .nav_zl{width: 70px; left: 87px;}
+    #nav .nav_sh{width: 74px; left: 195px;} 
+    #nav .nav_hd{width: 70px; left: 316px;}
+    #nav .nav_shop{width: 73px; left: 628px;}
+    #nav .nav_sp{width: 66px; left: 744px;}
+    #nav .nav_hd{width: 67px; left: 860px;}
+    #nav .nav_kf{width: 90px; left: 979px;} */
+
+    #main{ background:url(./images/guanwang.jpg) no-repeat center 0;}
+    #nav{ background:url(./images/nav_down_re.png) repeat-x,url(./images/nav.png) no-repeat center 0;}
+    #nav .container{min-height: 236px; overflow: hidden;}
+    #nav .nav_logo{ width:138px; height:112px; margin:15px auto;}
+
+    #nav dl{ position: absolute; top: 0;}
+    #nav dt{ height:66px;}
+    #nav dt a{ width:100%; height:100%; display: block; text-indent:-9999px; overflow: hidden;}
+    #nav dd{ line-height: 27px; font-size:12px; text-align: center;}
+    #nav dd a{ color:white; position: relative;}
+    #nav dd a:hover{ color:red; text-decoration: underline;}
+    #nav dd a.hot:after , #nav dd a.new:after{ content:""; display: block; width:12px; height:12px; background: url(./images/nav_tips.png) no-repeat; position: absolute; right:-15px; top: 0;}
+    #nav dd a.hot:after{ background-position: 0 -12px;}
+    #nav dd a.new:after{ background-position: 0 0;}
+    #nav .nav_index{ width:65px; left:0;}
+    #nav .nav_zl{ width:69px; left:98px;}
+    #nav .nav_ss{ width:74px; left:203px;}
+    #nav .nav_hd{ width:68px; left:325px;}
+
+    </style>
+</head>
+<body>
+    <div id="head" class="container-fluid">
+        <div class="container">
+            <div class="head_logo l">
+                <a href="#">腾讯游戏</a>
+            </div>
+            <div class="ad1 l">
+                <a href="#">
+                    <img src="./images/ad.jpg" alt="">
+                </a>
+            </div>
+            <div class="head_menu r">
+                <div class="head_menu_shpt l">
+                    <a href="#">成长守护平台</a>
+                </div>
+                <div class="head_menu_broad l">
+                    <a href="#">腾讯游戏排行榜</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="main" class="container-fluid">
+        <div id="nav" class="container-fluid">
+            <div class="container">
+                    <div class="nav_logo">
+                            <a href="#">
+                               <img src="./images/inside_logo.png" alt="QQ飞车" title="QQ飞车">
+                           </a>
+                    </div>
+                    <dl class="nav_index">
+                            <dt>
+                                <a href="#">首页</a>
+                            </dt>
+                        </dl>
+                        <dl class="nav_zl">
+                            <dt></dt>
+                            <dd><a href="#">新手指引</a></dd>
+                            <dd><a href="#">官方漫画</a></dd>
+                            <dd><a href="#">飞车手游</a></dd>
+                            <dd><a href="#">精美壁纸</a></dd>
+                            <dd><a href="#">游戏下载</a></dd>
+                        </dl>
+                        <dl class="nav_sh">
+                            <dt></dt>
+                            <dd><a href="#">谁是车王</a></dd>
+                            <dd><a href="#">SSC</a></dd>
+                            <dd><a href="#">全国公开赛</a></dd>
+                        </dl>
+                        <dl class="nav_hd">
+                            <dt></dt>
+                            <dd><a href="#">版本专区</a></dd>
+                            <dd><a href="#">合作专区</a></dd>
+                            <dd><a href="#">CDK兑换</a></dd>
+                        </dl>
+                        <dl class="nav_shop">
+                            <dt></dt>
+                            <dd><a href="#">紫钻专区</a></dd>
+                            <dd><a href="#">道具城</a></dd>
+                            <dd><a href="#">点券充值</a></dd>
+                        </dl>
+                        <dl class="nav_sp">
+                            <dt></dt>
+                            <dd><a href="#">教学视频</a></dd>
+                            <dd><a href="#">视频专区</a></dd>
+                        </dl>
+                        <dl class="nav_hd">
+                            <dt></dt>
+                            <dd><a href="#">官方论坛</a></dd>
+                            <dd><a href="#">掌上飞车</a></dd>
+                            <dd><a href="#">兴趣部落</a></dd>
+                            <dd><a href="#">官方微信</a></dd>
+                            <dd><a href="#">官方微博</a></dd>
+                        </dl>
+                        <dl class="nav_kf">
+                            <dt></dt>
+                            <dd><a href="#">客服</a></dd>
+                            <dd><a href="#">安全信用体系</a></dd>
+                            <dd><a href="#">封号查询</a></dd>
+                            <dd><a href="#">游戏安全测评</a></dd>
+                        </dl>
+                </div>
+            </div>
+        </div> -->
+        <div id="main" class="container-fluid">
+            <div id="nav" class="container-fluid">
+                <div class="container">
+                    <div class="nav_logo">
+                        <a href="#">
+                            <img src="./images/inside_logo.png" alt="QQ飞车" title="QQ飞车">
+                        </a>
+                    </div>
+                    <dl class="nav_index">
+                        <dt>
+                            <a href="#">首页</a>
+                        </dt>
+                    </dl>
+                    <dl class="nav_zl">
+                        <dt></dt>
+                        <dd><a href="#">新手指引</a></dd>
+                        <dd><a class="hot" href="#">官方漫画</a></dd>
+                        <dd><a class="new" href="#">飞车手游</a></dd>
+                        <dd><a href="#">精美壁纸</a></dd>
+                        <dd><a href="#">游戏下载</a></dd>
+                    </dl>
+                    <dl class="nav_ss">
+                        <dt></dt>
+                        <dd><a class="hot" href="#">SSC</a></dd>
+                        <dd><a href="#">谁是车王</a></dd>
+                        <dd><a href="#">全民争霸赛</a></dd>
+                    </dl>
+                    <dl class="nav_hd">
+                        <dt></dt>
+                        <dd><a class="hot" href="#">版本专区</a></dd>
+                        <dd><a href="#">合作专区</a></dd>
+                        <dd><a href="#">CDK兑换</a></dd>
+                    </dl>
+                </div>
+            </div>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+    </div>
+</body>
+</html>
